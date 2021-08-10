@@ -21,8 +21,8 @@ const Title = (props) => {
 const mapStateToProps = (state) => {
   console.log(state);
   return({
-    appName: state.appName,
-    editing: state.editing
+    appName: state.titleReducer.appName,
+    editing: state.titleReducer.editing
   });
 }
 
