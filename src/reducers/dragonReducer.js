@@ -1,3 +1,10 @@
+export const initialState = {
+    members: [
+        { name: 'Jojo Zhang', dragonStatus: true },
+        { name: 'Brandon Harris', dragonStatus: false }
+      ]
+}
+
 //1. create and export initialState
 //2. add member into our initialState
 //3. create a reducer function
