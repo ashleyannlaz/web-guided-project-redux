@@ -14,7 +14,6 @@ import './styles.css';
 const store = createStore(reducer);
 console.log(store.getState());
 
-
 function App() {
   return (
     <div className="App">
