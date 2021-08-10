@@ -29,4 +29,4 @@ const TitleForm = (props) => {
       </div>);
 }
 
-export default connect(null, {updateTitle})(TitleForm);
+export default connect(null, { updateTitle })(TitleForm); 
