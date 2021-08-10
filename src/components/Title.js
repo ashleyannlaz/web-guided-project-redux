@@ -2,17 +2,10 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 
-import { toggleEditing, updateTitle} from './../actions/titleActions';
-
 import TitleDisplay from './TitleDisplay';
 import TitleForm from './TitleForm';
 
 const Title = (props) => {
-
-  const handleTitleUpdate = (title) => {
-    props.dispatch(updateTitle(title));
-  }
-
   return (
     <div>
       <h1>{props.appName}</h1>
