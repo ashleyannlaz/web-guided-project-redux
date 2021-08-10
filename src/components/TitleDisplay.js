@@ -4,7 +4,8 @@ import { toggleEditing } from './../actions/titleActions';
 
 const TitleDisplay = (props)=> {
     const handleToggleEditing = () => {
-      props.dispatch(toggleEditing());
+      console.log(props);
+      // props.dispatch(toggleEditing());
     }
 
     return(<h2>
@@ -22,4 +23,8 @@ const mapStateToProps = (state)=> {
   });
 }
 
-export default connect(mapStateToProps)(TitleDisplay);
+const mapActionsToProps = {
+  toggleEditing:toggleEditing
+}
+
+export default connect(mapStateToProps, mapActionsToProps)(TitleDisplay);
