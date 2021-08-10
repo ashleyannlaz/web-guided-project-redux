@@ -3,7 +3,9 @@ import { combineReducers } from 'redux';
 import dragonReducer from './dragonReducer';
 import titleReducer from './titleReducer';
 
-export const rootReducer = combineReducers({
+const rootReducer = combineReducers({
   dragonReducer,
   titleReducer
 });
+
+export default rootReducer;
