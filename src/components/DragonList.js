@@ -15,7 +15,7 @@ class DragonList extends React.Component {
   };
 
   handleClick = ()=> {
-    this.props.dispatch(addMember(newMember));
+    this.props.dispatch(addMember(this.state.newMember));
     // this.setState({
     //   ...this.state,
     //   members: [...this.members, {name: newMember, dragonStatus: true}]
