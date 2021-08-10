@@ -10,12 +10,14 @@ const reducer = (state = initialState, action) => {
         case ADD_MEMBER:
             return {
                 ...state,
-                members:[...state.members, newMember]
+                members:[...state.members, {name: action.payload, dragonStatus: true}]
             }
         default:
             return state;
     }
 }
+
+export default reducer;
 
 //1. create and export initialState
 //2. add member into our initialState
