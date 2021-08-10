@@ -4,7 +4,7 @@ import { toggleEditing } from './../actions/titleActions';
 
 const TitleDisplay = (props)=> {
     const handleToggleEditing = () => {
-      console.log(props);
+      props.toggleEditing();
       // props.dispatch(toggleEditing());
     }
 
