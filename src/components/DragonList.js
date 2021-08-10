@@ -23,7 +23,7 @@ class DragonList extends React.Component {
     return (
       <div>
         <div className="friends-list">
-          {this.state.members.map((member, index) => (
+          {this.props.members.map((member, index) => (
             <DragonMember key={index} member={member}/>
           ))}
         </div>
@@ -40,10 +40,9 @@ class DragonList extends React.Component {
 }
 
 const mapStateToProps = (state)=>{
-  console.log(state);
   return {
     members:state.members
   }
 }
 
-export default connect()(DragonList);
+export default connect(mapStateToProps)(DragonList);
