@@ -8,7 +8,10 @@ export const initialState = {
 const reducer = (state = initialState, action) => {
     switch(action.type) {
         case(ADD_MEMBER):
-            
+            return {
+                ...state,
+                members:[]
+            }
         default:
             return state;
     }
