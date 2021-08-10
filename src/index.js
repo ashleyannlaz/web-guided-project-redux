@@ -10,7 +10,7 @@ import DragonList from './components/DragonList';
 import './styles.css';
 
 const store = createStore(reducer);
-console.log("store: ", store);
+console.log("store: ", store.getState());
 
 function App() {
   return (
