@@ -8,7 +8,9 @@ import { toggleEditing, updateTitle} from './../actions/titleActions';
 import TitleDisplay from './TitleDisplay';
 import TitleForm from './TitleForm';
 
-const Title = () => {
+const Title = (props) => {
+  console.log("title props: ", props);
+
   const [state, dispatch] = useReducer(titleReducer, initialState);
 
   const handleToggleEditing = () => {
@@ -31,4 +33,13 @@ const Title = () => {
   );
 };
 
-export default connect(mapStateToProps, mapActionsToProps)(Title);
+const mapStateToProps = ()=> {
+  return({
+    prop1: "Warren",
+    prop2: "Allison"
+  });
+}
+
+export default connect(mapStateToProps)(Title);
+// 1. mapStateToProps: a function allows use to inject state values directly into a component props.
+// 2. mapActionsToProps: an object used to inject actions into a components props AND automatically dispatches those action when excetuted.
