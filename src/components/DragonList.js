@@ -1,13 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 import DragonMember from './DragonMember';
 
 class DragonList extends React.Component {
   state = {
-    newMember: '',
-    members: [
-      { name: 'Jojo Zhang', dragonStatus: true },
-      { name: 'Brandon Harris', dragonStatus: false }
-    ]
+    newMember: ''
   };
 
   handleChanges = e => {
@@ -41,4 +39,4 @@ class DragonList extends React.Component {
   }
 }
 
-export default DragonList;
+export default connect()(DragonList);
