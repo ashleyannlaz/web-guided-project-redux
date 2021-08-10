@@ -5,6 +5,15 @@ export const initialState = {
       ]
 }
 
+const reducer = (state = initialState, action) => {
+    switch(action.type) {
+        case(ADD_MEMBER):
+            
+        default:
+            return state;
+    }
+}
+
 //1. create and export initialState
 //2. add member into our initialState
 //3. create a reducer function
