@@ -6,4 +6,4 @@ import { titleReducer}  from './titleReducer';
 export const reducer = combineReducers({
     dragon: dragonReducer,
     title: titleReducer
-})
+});
