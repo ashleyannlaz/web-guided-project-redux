@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { updateTitle} from './../actions/titleActions';
+import { updateTitle } from './../actions/titleActions';
 
 const TitleForm = (props) => {
   //Component State
@@ -11,7 +11,7 @@ const TitleForm = (props) => {
   };
 
   const handleSubmit = ()=> {
-
+    props.dispatch(updateTitle(newTitleText));
       // props.handleTitleUpdate(newTitleText);
   }
   
