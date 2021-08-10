@@ -9,6 +9,7 @@ import TitleDisplay from './TitleDisplay';
 import TitleForm from './TitleForm';
 
 const Title = (props) => {
+
   const handleToggleEditing = () => {
     dispatch(toggleEditing());
   }
