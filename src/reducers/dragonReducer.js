@@ -1,3 +1,5 @@
+import { ADD_MEMBER } from './../actions/dragonActions';
+
 export const initialState = {
     members: [
         { name: 'Jojo Zhang', dragonStatus: true },
