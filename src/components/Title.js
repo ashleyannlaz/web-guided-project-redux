@@ -36,7 +36,8 @@ const Title = (props) => {
 const mapStateToProps = ()=> {
   return({
     prop1: "Warren",
-    prop2: "Allison"
+    prop2: "Allison",
+    age:33
   });
 }
 
