@@ -33,11 +33,11 @@ const Title = (props) => {
   );
 };
 
-const mapStateToProps = ()=> {
+const mapStateToProps = (state) => {
+  console.log("state: ", state);
   return({
     prop1: "Warren",
-    prop2: "Allison",
-    age:33
+    prop2: "Allison"
   });
 }
 
