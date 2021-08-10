@@ -23,10 +23,10 @@ const Title = (props) => {
 
   return (
     <div>
-      <h1>{state.appName}</h1>
+      <h1>{props.appName}</h1>
       {
-        !state.editing ? 
-          <TitleDisplay title={state.title} handleToggleEditing={handleToggleEditing}/>: 
+        !props.editing ? 
+          <TitleDisplay title={props.title} handleToggleEditing={handleToggleEditing}/>: 
           <TitleForm handleTitleUpdate={handleTitleUpdate}/>
       }
     </div>
@@ -34,8 +34,6 @@ const Title = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log("state: ", state);
-
   return({
     appName: state.appName,
     title: state.title,

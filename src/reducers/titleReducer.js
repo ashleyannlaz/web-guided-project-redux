@@ -1,6 +1,6 @@
 export const initialState = {
     appName: "Redux Test",
-    title: "Dragon Member List 🐲",
+    title: "Dragon  List 🐲",
     editing: false
   };
   
