@@ -11,7 +11,7 @@ const TitleForm = (props) => {
   };
 
   const handleSubmit = ()=> {
-    props.updateTitle(newTitleText);
+    updateTitle(newTitleText);
   }
   
   return(<div>
