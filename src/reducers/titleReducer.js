@@ -3,8 +3,8 @@ export const initialState = {
     title: "Dragon Squad 🐲",
     editing: false
   };
-  
-const titleReducer = (state, action) => {
+  // 3. state = initialState
+const titleReducer = (state = initialState, action) => {
   switch (action.type) {
     case "UPDATE_TITLE":
       return {
